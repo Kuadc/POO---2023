@@ -18,7 +18,13 @@ class Alumnos:
 
     def __str__(self):
         return 'DNI= %s \n apellido= %s \n nombre = %s \n carrera = %s \n año = %s\n' % (self.__dni, self.__apellido, self.__nombre, self.__carrera, self.__año)
-
+    
+    def __gt__(self, other):
+        if type(other) == str:
+            return self.__apellido > other
+        else:
+            return self.__año > other
+        
     def Getdni(self):
         return self.__dni
 
