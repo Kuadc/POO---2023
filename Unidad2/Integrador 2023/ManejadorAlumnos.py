@@ -46,18 +46,18 @@ class ArregloAlumnos:
             aux = self.__alumno[i]
             valor = self.__alumno[i].Getapellido()
             j = i - 1
-            while j >= 0 and valor < self.__alumno[j].Getapellido(): #el segundo es menor que el primero
+            while j >= 0 and self.__alumno[j] > valor  : #si utilizamos el operador "<" la lista se ordenaria de mayor a menor.
                 self.__alumno[j + 1] = self.__alumno[j]
                 j = j - 1
             self.__alumno[j + 1] = aux
         for i in range(1, self.__cantidad):
             aux = self.__alumno[i]
-            año = self.__alumno[i].Getaño()
+            año = int(self.__alumno[i].Getaño())
             j = i - 1
-            while j >= 0 and año < self.__alumno[j].Getaño(): #el segundo es menor que el primero
+            while j >= 0 and self.__alumno[j] > año  :
                 self.__alumno[j + 1] = self.__alumno[j]
                 j = j - 1
-            self.__alumno[j + 1] = aux
+            self.__alumno[j + 1] = aux    
 
     def mostrardatos(self):
         for indice in range(self.__cantidad):
