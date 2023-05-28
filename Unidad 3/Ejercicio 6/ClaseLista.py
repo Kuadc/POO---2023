@@ -128,10 +128,9 @@ class Lista:
     def toJSON(self):
             d = dict(
             __class__ = self.__class__.__name__,
-            Vehiculo = [Nodo.toJSON() for Nodo in self] #como la lista se puede iterar gracias a los metodos "next" e "iter" podemos recorrer la lista de esta manera, con lo cual por cada nodo es la lista, llama al nodo.toJSON. que segun el nodo que tenga guardado, puede ser una instancia de la clase vehiculousado o vehiculonuevo. por lo tanto llamaria a vehiculousado.toJSON
+            Vehiculo = [Nodo.toJSON() for Nodo in self] 
             )
             return d
-    # necesito que for nodo in "self". ya que necesito el objeto lista entero(comienzo,actual,indice,tope) para que sea iterable. no puedo hacer self.comienzo
 
     def __iter__(self):
         return self
