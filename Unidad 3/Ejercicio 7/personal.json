@@ -1,0 +1,59 @@
+{
+    "__class__": "Lista",
+    "Personal": [
+        {
+            "__class__": "DocenteInvestigador",
+            "__atributos__": {
+                "cuil": "207778881",
+                "apellido": "Guzman",
+                "nombre": "Mauricio",
+                "sueldobasico": "100000",
+		"antiguedad": "10",
+                "area": "Informatica",
+                "tipo": "Asistente",
+                "cargo": "simple",
+                "catedra": "Procedural",
+                "carrera": "TUPW",
+                "categoria": "3",
+                "importeextradocencia": "5000",
+                "importeextrainvestigador": "6000"
+            }
+        },
+        {
+            "__class__": "Investigador",
+            "__atributos__": {
+                "cuil": "2099922221",
+                "apellido": "Castro",
+                "nombre": "Octavio",
+                "sueldobasico": "90000",
+		"antiguedad": "7",
+                "area": "Informatica",
+                "tipo": "academico"
+            }
+        },
+        {
+            "__class__": "Docente",
+            "__atributos__": {
+                "cuil": "2734544267",
+                "apellido": "Ramirez",
+                "nombre": "Jorge",
+                "sueldobasico": "90000",
+		"antiguedad": "5",
+                "cargo": "simple",
+                "catedra": "POO",
+                "carrera": "TUPW"
+            }
+        },
+        {
+            "__class__": "Apoyo",
+            "__atributos__": {
+                "cuil": "20293454281",
+                "apellido": "Gonzalez",
+                "nombre": "Roberto",
+                "sueldobasico": "80000",
+		"antiguedad": "2",
+                "categoria": "7"
+            }
+        }
+    ]
+}
