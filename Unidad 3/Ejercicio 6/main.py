@@ -88,11 +88,11 @@ if __name__ == '__main__':
         elif opcion == 6:
                 for dato in lista:
                     print(dato)
-                    unvehiculo = dato
-                    lista.importeventa(unvehiculo)
+                    dato.importeventa()
         elif opcion == 7:
             d = lista.toJSON()
-            jsonF.guardarJSONArchivo(d, 'datosPuntos.json')
+            jsonF.guardarJSONArchivo(d, 'Vehiculos.json')
         else :
             bandera = False
             print("____Usted finalizo el programa____")
+
