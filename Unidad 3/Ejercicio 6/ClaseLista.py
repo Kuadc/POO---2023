@@ -46,8 +46,9 @@ class Lista:
                 i+=1
             if pos == i:
                 nodo = Nodo(elemento)
-                anterior = nodo.getSiguiente()
+                anterior.setSiguiente(nodo)
                 nodo.setSiguiente(aux)
+                self.__tope+=1
             else:
                 raise IndexError
 
