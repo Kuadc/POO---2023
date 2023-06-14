@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+ <title>{% block title %}{% endblock %}</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+<header>
+ <h2>Colegio San Miguel</h2>
+</header>
+<section>
+ <!-- si va a enviar datos al servidor use etiqueta form, si solo va a mostrar datos use la etiqueta article-->
+   <div>
+      <div id="contenedor">
+         <div id="central">
+            <div id="login">
+               {% block content %}
+               {% endblock %}
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<footer>
+    <p>Av. Libertador San Martin 500 (este) - Capital  - San Juan - Tel: 2644303748</p>
+</footer>
+</body>
+</html>

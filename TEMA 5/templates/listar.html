@@ -1,0 +1,29 @@
+{% extends "base_template.html" %}
+{% block title %}Seleccionar Curso{% endblock %}
+{% block content %}
+<h1>Comentarios registrados </h1>
+      <hr/>
+      <div class="container">
+            <table>
+               <thead>
+                  <tr>
+                     <th>Preceptor</th>
+                     <th>Apellido</th>  
+                     <th>correo</th>              
+                  </tr>
+               </thead>
+
+               <tbody>
+                  {% for preceptor in preceptores %}
+                     <tr>
+                        <td>{{ preceptor.nombre }}</td>
+                        <td>{{ preceptor.apellido }}</td>
+                        <td>{{ preceptor.correo }}</td>
+                     </tr>
+                  {% endfor %}
+               </tbody>
+            </table>	  
+         <br><br>
+      </div>
+
+{% endblock %}
